@@ -7,6 +7,18 @@
     }
 }
 @media (max-width: 1800px) {
+    .header-top .logo .text {
+        background: #BC87B3;
+        width: 153px;
+    }
+    .header-top .logo .text span {
+        font-size: 11px;
+        line-height: 13px;
+    }
+    .header-top .logo .text .title {
+        font-size: 22px;
+        line-height: 28px;
+    }
     #stages .stages-wrap .box:after {
         width: 40px;
         height: 40px;
@@ -38,28 +50,41 @@
         text-align: center;
     }
     .header-top .branches .title {
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 18px;
+        font-size: 16px;
+        line-height: 15px;
+        margin-bottom: 0;
     }
     .header-top .branches span {
-        font-size: 15px;
-        line-height: 19px;
+        font-size: 14px;
+        line-height: 16px;
     }
     .header-top .number {
         margin-left: 30px;
-
+    }
+    .header-top .number .num {
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .header-top .number span{
+        font-size: 14px;
+        line-height: 16px;
     }
     .header-top .top_menu li {
         margin-right: 25px;
     }
-    .header-top .schedule{
-        margin-left: 20px;
+    .header-top .branches .num {
+        font-size: 40px;
+        line-height: 47px;
     }
     .header-top .schedule img {
         margin-right: 10px;
-        width: 45px;
-        height: 45px;
+        width: 32px;
+        height: 32px;
+    }
+    .header-top .schedule {
+        display: flex;
+        align-items: end;
+        margin-left: 20px;
     }
     .header-top {
         justify-content: space-between;
@@ -67,34 +92,61 @@
     .header-top .top_menu {
         margin: 43px 35px 26px 15px;
     }
-    header .container {
-        padding: 0 20px;
-    }
-    .header-bottom {
-        display: flex;
-        flex-wrap: wrap;
-    }
     .header-bottom .branches-address {
-        width: 100%;
-        height: 64px;
+        width: 232px;
+        height: 52px;
+    }
+    .header-bottom .branches-address img {
+        width: 22px;
+    }
+    .header-bottom .branches-address span {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .header-bottom .menu .box .icon-box {
+        width: 52px;
+        height: 52px;
+        padding: 10px;
+    }
+    .header-bottom .menu .box .name {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .header-bottom .menu .box .text-box {
+        padding: 0 10px;
+        height: 52px;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        margin-bottom: 10px;
     }
     .header-bottom .menu {
         margin-left: 0;
     }
+    #hero .hero-wrap {
+        display: grid;
+        grid-template-columns: 0.8fr 2.4fr;
+        grid-column-gap: 38px;
+    }
+    #hero .right-col .second-col .price .old {
+        font-size: 22px;
+    }
+    #hero .right-col .second-col .price .new {
+        margin-left: 10px;
+        font-size: 25px
+    }
+    #hero .doctor-list {
+        padding-left: 19px;
+    }
+    #hero .hero-wrap .left-col{
+        padding-top: 102px;
+    }
+
 }
 @media (max-width: 1600px) {
-    header .header-top {
-        flex-wrap: wrap;
-    }
-    .header-top .logo{
-        width: 20%;
-        margin-bottom: 15px;
-    }
+
+
     .header-top .top_menu {
         margin: 43px 0 26px 0;
-        width: 75%;
         border-bottom: 0;
         display: flex;
         justify-content: flex-end;
@@ -108,24 +160,41 @@
     .header-top .number {
         margin-left: 0;
     }
-    #hero .hero-wrap {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-column-gap: 55px;
+    .header-top .schedule .item .day, .header-top .schedule .item .time {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .header-top .schedule .item {
+        grid-template-columns: 45px 1fr;
+        grid-column-gap: 9px;
     }
     #get-easy td.first {
         width: 55%;
     }
-
-    #stages .stages-wrap .box:after {
-        display: none;
+    #hero .right-col .second-col {
+        padding: 0 10px;
     }
-
+    #stages .stages-wrap .box:after {
+        width: 40px;
+        height: 40px;
+        right: -30px;
+    }
+    #stages .stages-wrap .tabs.box:after {
+        right: -50px;
+    }
+    #stages .stages-wrap .box .main-img {
+        height: 180px;
+    }
+    #stages .stages-wrap .box .title {
+        font-family: 'Stem', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+    }
     #stages .stages-wrap {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 40px;
     }
-
     #stages .stages-wrap .box {
         max-width: 100%;
     }
@@ -192,13 +261,165 @@
     }
 }
 @media (max-width: 1450px) {
-    .header-bottom .menu {
-       display: grid;
-       grid-template-columns: 1fr 1fr 1fr;
-        grid-row-gap: 10px;
+    .header-top .logo .img {
+        width: 55px;
+        height: 85px;
+    }
+    .header-top .logo .img img {
+        width: 45px;
+        height: 45px;
+    }
+    .header-top .logo .text {
+        width: 150px;
+        height: 85px;
+    }
+    .header-top .top_menu li {
+        margin-right: 15px;
+    }
+    .header-top .top_menu li a {
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .header-top .number .num {
+        font-size: 15px;
+        line-height: 16px;
+    }
+    .header-top .number span {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .header-top .branches .num {
+        font-size: 30px;
+        line-height: 27px;
+    }
+    .header-top .branches .title {
+        font-size: 13px;
+        line-height: 13px;
+    }
+    .header-top .logo .text .title {
+        font-size: 15px;
+        line-height: 19px;
+    }
+    .header-top .logo .text {
+        width: 100px;
+        height: 85px;
+    }
+    .header-bottom .branches-address span {
+        font-size: 12px;
+        line-height: 17px;
+        margin-left: 10px;
+    }
+    .header-bottom .branches-address img {
+        width: 15px;
+    }
+    .header-bottom .branches-address {
+        width: 160px;
+    }
+    .header-bottom .menu .box .price {
+        line-height: 8px;
+        font-size: 12px;
+    }
+    .header-bottom .menu .box .name {
+        font-size: 10px;
+        line-height: 16px;
+    }
+    .header-bottom .menu .box .text-box {
+        padding: 0 5px;
+    }
+    #hero .right-col .second-col .title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    #hero .right-col .second-col .price .old {
+        font-size: 18px;
+    }
+    #hero .right-col .second-col .price .new {
+        font-size: 20px;
+    }
+    .select__head {
+        font-size: 14px;
+        height: 46px;
+        padding: 0 30px 0 12px;
+    }
+    #hero .doctor-list .title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    #hero .doctor-list ul li {
+        padding-left: 16px;
+        font-size: 13px;
+    }
+    #hero .doctor-list {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #hero .right-col .box {
+        display: grid;
+        grid-template-columns: 1.3fr 1.5fr 1fr 0.8fr;
+    }
+    #hero .certificate_img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #hero .certificate_img img {
+        width: 85%;
+    }
+    #hero .first-col .wrapper {
+        padding: 7px 12px 3px 12px;
+    }
+    #hero .first-col .wrapper .green{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    #hero .right-col .category {
+        font-size: 17px;
+        line-height: 21px;
+    }
+    #stages .stages-wrap .box:after {
+        width: 25px;
+        height: 25px;
+        right: -20px;
     }
 }
 @media (max-width: 1200px) {
+    header .container {
+        padding:  0 30px;
+    }
+    .container{
+        padding: 0 30px;
+    }
+    .header-top .schedule img {
+        margin-right: 10px;
+        width: 25px;
+        height: 25px;
+    }
+    .header-top .top_menu li {
+        padding-bottom: 10px;
+    }
+    .header-top .top_menu li {
+        margin-right: 10px;
+    }
+    .header-bottom .branches-address {
+        width: 130px;
+        padding: 0 4px;
+        margin-right: 10px;
+    }
+    .header-bottom .menu .box .icon-box {
+        width: 40px;
+        height: 52px;
+        padding: 10px;
+    }
+    .header-bottom .menu .box .price {
+        line-height: 8px;
+        font-size: 11px;
+    }
+    .header-bottom .menu .box .name {
+        font-size: 9px;
+        line-height: 16px;
+    }
     #hero .right-col .second-col .price .new {
         font-size: 23px;
     }
@@ -211,9 +432,19 @@
     #hero .first-col .wrapper {
         background-size: contain;
     }
+    #hero .right-col .second-col .price .old {
+        font-size: 14px;
+    }
+    #hero .right-col .second-col .price .new {
+        font-size: 16px;
+    }
+    #hero .right-col .second-col .title {
+        font-size: 14px;
+    }
     #stages {
         padding: 44px 0 34px 0;
     }
+
     #get-easy .row {
         justify-content: center;
     }
@@ -298,6 +529,34 @@
         width: 37px;
         height: 41px;
     }
+    .header-bottom .menu .box .icon-box {
+        width: 64px;
+        height: 64px;
+    }
+    .header-bottom .menu .box .text-box{
+        height: 64px;
+        padding: 0 10px 0 8px;
+    }
+    .header-bottom .branches-address {
+        width: 288px;
+        height: 64px;
+        padding: 0 20px
+    }
+    .header-bottom .branches-address span {
+        font-size: 18px;
+        margin-left: 22px;
+    }
+    .header-bottom .branches-address img {
+        width: 30px;
+    }
+    .header-bottom .menu .box .name {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .header-bottom .menu .box .price {
+        line-height: 19px;
+        font-size: 16px;
+    }
     .header-top .schedule,
     .header-top .branches,
     .header-top .top_menu,
@@ -370,6 +629,20 @@
     .header-bottom .branches-address {
        margin: 5px 0 0 0;
     }
+    #stages .stages-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 40px;
+    }
+    #stages .stages-wrap .box .title {
+        font-size: 24px;
+    }
+    #stages .stages-wrap .box .main-img {
+        height: 250px;
+    }
+    #stages .stages-wrap .box:after{
+        display: none;
+    }
 
 }
 @media (max-width: 991px) {
@@ -381,12 +654,14 @@
         width: 100%;
         padding: 0 30px;
     }
-    #hero .right-col .box {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-row-gap: 20px;
+    #hero .hero-wrap{
+        grid-template-columns: 1fr;
     }
+    #hero .hero-wrap .left-col {
+        padding-top: 102px;
+        display: none;
+    }
+
     #get-easy table tr td.second ,
     #get-easy table tr th.second{
         display: none;
@@ -417,6 +692,22 @@
     #hero .right-col .green {
         margin: 152px auto 0 auto;
         width: 260px;
+    }
+    #hero .right-col .second-col .title {
+        font-size: 18px;
+    }
+    #hero .right-col .second-col .price .old {
+        font-size: 24px;
+    }
+    #hero .doctor-list ul li {
+        padding-left: 16px;
+        font-size: 14px;
+    }
+    #hero .doctor-list .title {
+        font-size: 18px;
+    }
+    #hero .right-col .second-col .price .new {
+        font-size: 26px;
     }
     #get-easy table tr td.first {
         font-size: 14px;
